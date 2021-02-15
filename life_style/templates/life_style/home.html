@@ -1,0 +1,20 @@
+{% extends "life_style/header.html" %}
+
+{% block content %}
+        <section class="content">
+            <br>
+            <br>
+            <br>
+            <h1>
+                An Experiment II
+            </h1>
+            {% for post in object_list %}
+                <h5>
+                    <br>
+                    <a href="/life_style/{{post.id}}" style="color: darkblue">
+                        {{post.title}}
+                    </a>
+                </h5>
+            {% endfor %}
+        </section>
+{% endblock %}

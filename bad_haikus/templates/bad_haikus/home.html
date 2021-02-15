@@ -1,0 +1,16 @@
+{% extends "bad_haikus/header.html" %}
+
+{% block content %}
+        <section class="content">
+            <br>
+            <br>
+            {% for post in object_list %}
+                <h5>
+                    <br>
+                    <a href="/bad_haikus/{{post.id}}" style="color: darkblue">
+                        {{post.title}}
+                    </a>
+                </h5>
+            {% endfor %}
+        </section>
+{% endblock %}

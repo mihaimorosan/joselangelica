@@ -1,0 +1,16 @@
+{% extends "blog/header.html" %}
+
+{% block content %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="content">
+    {% for post in object_list %}
+        <h5>
+            <br>
+            <a href="/blog/{{post.id}}" style="color: darkblue">{{post.title}}</a>
+        </h5>
+    {% endfor %}
+    </section>
+{% endblock %}sss

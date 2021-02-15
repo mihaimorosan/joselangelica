@@ -1,0 +1,21 @@
+{% extends "style/header.html" %}
+
+{% block content %}
+        <section class="content">
+            <br>
+            <br>
+            <br>
+            <h1>
+                An Experiment I
+            </h1>
+            <br>
+            {% for post in object_list %}
+                <h5>
+                    <br>
+                    <a href="/style/{{post.id}}" style="color: darkblue">
+                        {{post.title}}
+                    </a>
+                </h5>
+            {% endfor %}
+        </section>
+{% endblock %}
